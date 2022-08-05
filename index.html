@@ -9,30 +9,75 @@
     <title>:o</title>
   </head>
   <body>
-    How many team members can I invite?
-    You can invite up to 2 additional users on the Free plan. There is no limit on 
-    team members for the Premium plan.
-  
-    What is the maximum file upload size?
-    No more than 2GB. All files in your account must fit your allotted storage space.
-  
-    How do I reset my password?
-    Click “Forgot password” from the login page or “Change password” from your profile page.
-    A reset link will be emailed to you.
-  
-    Can I cancel my subscription?
-    Yes! Send us a message and we’ll process your request no questions asked.
-  
-    Do you provide additional support?
-    Chat and email support is available 24/7. Phone lines are open during normal business hours.
+    <main class="main">
+      <div class="main__img-section">
+        <!-- <img
+          src="./images/illustration-woman-online-mobile.svg"
+          alt="gekcxmlkdslxzm"
+        /> -->
+      </div>
+
+      <div class="main__txtbox">
+        <h1 class="main__title">FAQ</h1>
+
+        <ul class="main__accordion-box">
+          <li>
+            <button data-toggle data-target="faq-1" class="main__q">
+              How many team members can I invite?
+            </button>
+            <p id="faq-1" class="main__a toggle-component">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </li>
+
+          <li>
+            <button data-toggle data-target="faq-2" class="main__q open">
+              What is the maximum file upload size?
+            </button>
+            <p id="faq-2" class="main__a">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+          </li>
+
+          <li>
+            <button data-toggle data-target="faq-3" class="main__q">
+              How do I reset my password?
+            </button>
+            <p id="faq-3" class="main__a toggle-component">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </li>
+
+          <li>
+            <button data-toggle data-target="faq-4" class="main__q">
+              Can I cancel my subscription?
+            </button>
+            <p id="faq-4" class="main__a toggle-component">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
+          </li>
+
+          <li>
+            <button data-toggle data-target="faq-5" class="main__q">
+              Do you provide additional support?
+            </button>
+            <p id="faq-5" class="main__a toggle-component">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </main>
 
     <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4ec3b093b8.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
-echo "# FAQ-accordion-card" >> README.md
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/piushbhandari/FAQ-accordion-card.git
-git push -u origin main
