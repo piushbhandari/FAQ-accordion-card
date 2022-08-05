@@ -9,19 +9,29 @@
     <title>:o</title>
   </head>
   <body>
-    <main class="main">
-      <div class="main__img-section">
-        <!-- <img
-          src="./images/illustration-woman-online-mobile.svg"
-          alt="gekcxmlkdslxzm"
-        /> -->
+    <main class="main flex">
+      <div class="main__box-img--desktop">
+        <img src="./images/illustration-box-desktop.svg" alt="gekcxmlkdslxzm" />
       </div>
-
+      <div class="main__img-cont--desktop">
+        <div class="main__hero-img--desktop">
+          <img
+            src="./images/illustration-woman-online-desktop.svg"
+            alt="gekcxmlkdslxzm"
+          />
+        </div>
+        <div class="main__hero-img--mobile">
+          <img
+            src="./images/illustration-woman-online-mobile.svg"
+            alt="gekcxmlkdslxzm"
+          />
+        </div>
+      </div>
       <div class="main__txtbox">
         <h1 class="main__title">FAQ</h1>
 
-        <ul class="main__accordion-box">
-          <li>
+        <ul class="main__accordion-box flex-column">
+          <li class="main__accordion-item">
             <button data-toggle data-target="faq-1" class="main__q">
               How many team members can I invite?
             </button>
@@ -31,7 +41,7 @@
             </p>
           </li>
 
-          <li>
+          <li class="main__accordion-item">
             <button data-toggle data-target="faq-2" class="main__q open">
               What is the maximum file upload size?
             </button>
@@ -41,7 +51,7 @@
             </p>
           </li>
 
-          <li>
+          <li class="main__accordion-item">
             <button data-toggle data-target="faq-3" class="main__q">
               How do I reset my password?
             </button>
@@ -51,7 +61,7 @@
             </p>
           </li>
 
-          <li>
+          <li class="main__accordion-item">
             <button data-toggle data-target="faq-4" class="main__q">
               Can I cancel my subscription?
             </button>
@@ -61,7 +71,7 @@
             </p>
           </li>
 
-          <li>
+          <li class="main__accordion-item">
             <button data-toggle data-target="faq-5" class="main__q">
               Do you provide additional support?
             </button>

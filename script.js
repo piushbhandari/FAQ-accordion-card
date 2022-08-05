@@ -4,6 +4,7 @@ accBtns.forEach((btn) => {
   const dataTarget = btn.getAttribute("data-target");
   const targetElement = document.getElementById(dataTarget);
   btn.addEventListener("click", (e) => {
+    collapseContent(accBtns);
     if (btn.classList.contains("open")) {
       btn.classList.remove("open");
       btn.classList.remove("active-btn");
@@ -15,3 +16,13 @@ accBtns.forEach((btn) => {
     }
   });
 });
+
+function collapseContent(btns) {
+  btns.forEach((btn) => {
+    const dataTarget = btn.getAttribute("data-target");
+    const targetElement = document.getElementById(dataTarget);
+    btn.classList.remove("open");
+    btn.classList.remove("active-btn");
+    targetElement.classList.add("toggle-component");
+  });
+}
